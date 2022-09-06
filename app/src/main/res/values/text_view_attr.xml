@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SatrioText">
+        <attr name="customStyle" format="enum">
+            <enum name="satrio_default" value="0" />
+            <enum name="satrio_inactive" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
