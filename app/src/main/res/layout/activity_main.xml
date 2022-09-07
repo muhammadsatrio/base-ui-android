@@ -7,11 +7,20 @@
     tools:context=".MainActivity">
 
     <com.satrio.baseuiandroid.SatrioText
+        android:id="@+id/satrio_custom_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="asdasd"
         app:customStyle="satrio_default"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.satrio.baseuiandroid.SatrioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="custom text"
+        app:layout_constraintLeft_toRightOf="@id/satrio_custom_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
