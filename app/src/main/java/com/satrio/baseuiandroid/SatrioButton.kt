@@ -19,6 +19,7 @@ class SatrioButton(context: Context, attributeSet: AttributeSet) :
     init {
         setButtonBackground(R.drawable.button_background)
         setButtonText(context, attributeSet)
+        setMargin()
         binding.buttonContainer.isClickable = true
     }
 
@@ -28,6 +29,14 @@ class SatrioButton(context: Context, attributeSet: AttributeSet) :
         }
     }
 
+    private fun setMargin() {
+        binding.buttonText.updateLayoutParams<LinearLayout.LayoutParams> {
+            this.topMargin = 10
+            this.bottomMargin = 10
+            this.leftMargin = 20
+            this.rightMargin = 20
+        }
+    }
     private fun setButtonText(context: Context, attributeSet: AttributeSet) {
         val typedArray =
             context.obtainStyledAttributes(attributeSet, R.styleable.SatrioButton, 0, 0)
